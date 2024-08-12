@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B69F1E1A2C5BD88900619B25 /* Find_FlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */; };
+		B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E1B2C5BD88900619B25 /* ContentView.swift */; };
+		B69F1E1E2C5BD88A00619B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */; };
+		B69F1E212C5BD88A00619B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */; };
+		B69F1E312C611D2800619B25 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E302C611D2800619B25 /* Classifier.swift */; };
+		B69F1E332C611EA900619B25 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E322C611EA900619B25 /* ImageClassifier.swift */; };
+		B69F1E392C650ACC00619B25 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E382C650ACC00619B25 /* MobileNetV2.mlmodel */; };
+		B69F1E3B2C650CD900619B25 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E3A2C650CD900619B25 /* EntryView.swift */; };
+		B69F1E3D2C6631E200619B25 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E3C2C6631E200619B25 /* countries.json */; };
+		B69F1E3F2C66330D00619B25 /* Get_Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E3E2C66330D00619B25 /* Get_Json.swift */; };
+		B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E402C6637DC00619B25 /* RandomFlagView.swift */; };
+		B69F1E432C66626C00619B25 /* country.json in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E422C66626C00619B25 /* country.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B69F1E162C5BD88900619B25 /* Find Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_FlagsApp.swift; sourceTree = "<group>"; };
+		B69F1E1B2C5BD88900619B25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B69F1E2D2C5D130F00619B25 /* Find-Flags-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Find-Flags-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B69F1E302C611D2800619B25 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		B69F1E322C611EA900619B25 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		B69F1E382C650ACC00619B25 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		B69F1E3A2C650CD900619B25 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		B69F1E3C2C6631E200619B25 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		B69F1E3E2C66330D00619B25 /* Get_Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_Json.swift; sourceTree = "<group>"; };
+		B69F1E402C6637DC00619B25 /* RandomFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFlagView.swift; sourceTree = "<group>"; };
+		B69F1E422C66626C00619B25 /* country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69F1E132C5BD88900619B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B69F1E0D2C5BD88900619B25 = {
+			isa = PBXGroup;
+			children = (
+				B69F1E182C5BD88900619B25 /* Find Flags */,
+				B69F1E172C5BD88900619B25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B69F1E172C5BD88900619B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69F1E162C5BD88900619B25 /* Find Flags.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B69F1E182C5BD88900619B25 /* Find Flags */ = {
+			isa = PBXGroup;
+			children = (
+				B69F1E3A2C650CD900619B25 /* EntryView.swift */,
+				B69F1E402C6637DC00619B25 /* RandomFlagView.swift */,
+				B69F1E2D2C5D130F00619B25 /* Find-Flags-Info.plist */,
+				B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */,
+				B69F1E1B2C5BD88900619B25 /* ContentView.swift */,
+				B69F1E322C611EA900619B25 /* ImageClassifier.swift */,
+				B69F1E382C650ACC00619B25 /* MobileNetV2.mlmodel */,
+				B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */,
+				B69F1E1F2C5BD88A00619B25 /* Preview Content */,
+				B69F1E302C611D2800619B25 /* Classifier.swift */,
+				B69F1E422C66626C00619B25 /* country.json */,
+				B69F1E3C2C6631E200619B25 /* countries.json */,
+				B69F1E3E2C66330D00619B25 /* Get_Json.swift */,
+			);
+			path = "Find Flags";
+			sourceTree = "<group>";
+		};
+		B69F1E1F2C5BD88A00619B25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69F1E152C5BD88900619B25 /* Find Flags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "Find Flags" */;
+			buildPhases = (
+				B69F1E122C5BD88900619B25 /* Sources */,
+				B69F1E132C5BD88900619B25 /* Frameworks */,
+				B69F1E142C5BD88900619B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Flags";
+			productName = "Find Flags";
+			productReference = B69F1E162C5BD88900619B25 /* Find Flags.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B69F1E0E2C5BD88900619B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B69F1E152C5BD88900619B25 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "Find Flags" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B69F1E0D2C5BD88900619B25;
+			productRefGroup = B69F1E172C5BD88900619B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69F1E152C5BD88900619B25 /* Find Flags */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69F1E142C5BD88900619B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69F1E432C66626C00619B25 /* country.json in Resources */,
+				B69F1E3D2C6631E200619B25 /* countries.json in Resources */,
+				B69F1E212C5BD88A00619B25 /* Preview Assets.xcassets in Resources */,
+				B69F1E1E2C5BD88A00619B25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B69F1E122C5BD88900619B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69F1E392C650ACC00619B25 /* MobileNetV2.mlmodel in Sources */,
+				B69F1E312C611D2800619B25 /* Classifier.swift in Sources */,
+				B69F1E3F2C66330D00619B25 /* Get_Json.swift in Sources */,
+				B69F1E332C611EA900619B25 /* ImageClassifier.swift in Sources */,
+				B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */,
+				B69F1E3B2C650CD900619B25 /* EntryView.swift in Sources */,
+				B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */,
+				B69F1E1A2C5BD88900619B25 /* Find_FlagsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B69F1E222C5BD88A00619B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B69F1E232C5BD88A00619B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B69F1E252C5BD88A00619B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Flags/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7Z5S76S2J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Find-Flags-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take Pictures";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucasfrancisco.Find-Flags";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B69F1E262C5BD88A00619B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Flags/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7Z5S76S2J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Find-Flags-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To take Pictures";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucasfrancisco.Find-Flags";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "Find Flags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69F1E222C5BD88A00619B25 /* Debug */,
+				B69F1E232C5BD88A00619B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "Find Flags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69F1E252C5BD88A00619B25 /* Debug */,
+				B69F1E262C5BD88A00619B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B69F1E0E2C5BD88900619B25 /* Project object */;
+}
