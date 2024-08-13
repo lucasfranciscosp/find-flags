@@ -24,26 +24,26 @@ struct Country: Identifiable, Codable {
 
 struct CountryParser {
     
-    func parseCountries() -> [String: String] {
-        if let fileURL = Bundle.main.url(forResource: "countries", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileURL)
-                let countries = try JSONDecoder().decode([String: String].self, from: data)
-                
-                // Iterar sobre todos os pares chave-valor no dicionário
-//                for (code, country) in countries {
-//                    print("Código: \(code), País: \(country)")
-//                }
-                
-                return countries
-            } catch {
-                print("Erro ao carregar ou decodificar JSON: \(error)")
-            }
-        } else {
-            print("Arquivo 'countries.json' não encontrado.")
-        }
-        return [:]
-    }
+//    func parseCountries() -> [String: String] {
+//        if let fileURL = Bundle.main.url(forResource: "countries", withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: fileURL)
+//                let countries = try JSONDecoder().decode([String: String].self, from: data)
+//                
+//                // Iterar sobre todos os pares chave-valor no dicionário
+////                for (code, country) in countries {
+////                    print("Código: \(code), País: \(country)")
+////                }
+//                
+//                return countries
+//            } catch {
+//                print("Erro ao carregar ou decodificar JSON: \(error)")
+//            }
+//        } else {
+//            print("Arquivo 'countries.json' não encontrado.")
+//        }
+//        return [:]
+//    }
     
     func loadCountries() -> [Country] {
             guard let url = Bundle.main.url(forResource: "country", withExtension: "json") else {
