@@ -1,6 +1,12 @@
 import SwiftUI
+import SwiftData
 
 struct RandomFlagView: View {
+    
+    
+    @Environment(\.modelContext) private var context
+    @Query private var streak: [DataItem]
+    
     @Binding var countries: [Country]
     @State var currentCountry: Country
     @State private var options: [String] = []
@@ -12,13 +18,16 @@ struct RandomFlagView: View {
         VStack {
             if currentCountry.code != "unknown" {
                 
-                Text("Your best streak: \(maxStreak)")
+                Text("Your best streak: \(streak.first?.maxStreak ?? 0)")
                 Text("Your current streak: \(currentStreak)")
                 
                 Image(currentCountry.code.lowercased())
                     .resizable()
+                    .frame(maxHeight: 300)
+                    .border(Color.black, width: 0.5)
+                    .padding()
                     .scaledToFit()
-                    .frame(width: 150, height: 150) // Ajuste o tamanho conforme necessário
+                     // Ajuste o tamanho conforme necessário
             
                 let columns: [GridItem] = [
                     GridItem(.flexible()),
@@ -31,12 +40,14 @@ struct RandomFlagView: View {
                             handleButtonPress(buttonTitle)
                         }) {
                             Text(buttonTitle)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                //.frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .frame(width: 150, height: 50)
                                 .padding()
-                                .background(Color.blue)
+                                .background(selectedWrong.contains(buttonTitle) ? .red : .blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                         }
+                        
                         .disabled(selectedWrong.contains(buttonTitle))
                         .opacity(selectedWrong.contains(buttonTitle) ? 0.5 : 1.0)
                     }
@@ -46,9 +57,19 @@ struct RandomFlagView: View {
                 Text("Carregando...")
                     .onAppear {
                         loadNewCountry()
+                        if streak.first == nil {
+                            addStreak()
+                        }
                     }
             }
         }
+    }
+    
+    func addStreak() {
+        
+        let streak = DataItem()
+        
+        context.insert(streak)
     }
     
     private func loadNewCountry() {
@@ -62,7 +83,11 @@ struct RandomFlagView: View {
             loadNewCountry()
             selectedWrong = []
             currentStreak += 1
-            maxStreak = max(maxStreak, currentStreak)
+            // maxStreak = max(maxStreak, currentStreak)
+            
+            if let streak = streak.first {
+                streak.updateStreak(currentStreak: currentStreak)
+            }
         } else {
             // Errou
             currentStreak = 0

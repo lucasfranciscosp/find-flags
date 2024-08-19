@@ -19,6 +19,8 @@
 		B69F1E3F2C66330D00619B25 /* Get_Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E3E2C66330D00619B25 /* Get_Json.swift */; };
 		B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E402C6637DC00619B25 /* RandomFlagView.swift */; };
 		B69F1E432C66626C00619B25 /* country.json in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E422C66626C00619B25 /* country.json */; };
+		B69F1E452C6BA5B200619B25 /* country_pt.json in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E442C6BA5B200619B25 /* country_pt.json */; };
+		B69F1E472C6CD3F100619B25 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E462C6CD3F100619B25 /* DataItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B69F1E3E2C66330D00619B25 /* Get_Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_Json.swift; sourceTree = "<group>"; };
 		B69F1E402C6637DC00619B25 /* RandomFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFlagView.swift; sourceTree = "<group>"; };
 		B69F1E422C66626C00619B25 /* country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country.json; sourceTree = "<group>"; };
+		B69F1E442C6BA5B200619B25 /* country_pt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = country_pt.json; sourceTree = "<group>"; };
+		B69F1E462C6CD3F100619B25 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				B69F1E1F2C5BD88A00619B25 /* Preview Content */,
 				B69F1E302C611D2800619B25 /* Classifier.swift */,
 				B69F1E422C66626C00619B25 /* country.json */,
+				B69F1E442C6BA5B200619B25 /* country_pt.json */,
+				B69F1E462C6CD3F100619B25 /* DataItem.swift */,
 				B69F1E3C2C6631E200619B25 /* countries.json */,
 				B69F1E3E2C66330D00619B25 /* Get_Json.swift */,
 			);
@@ -155,6 +161,7 @@
 				B69F1E3D2C6631E200619B25 /* countries.json in Resources */,
 				B69F1E212C5BD88A00619B25 /* Preview Assets.xcassets in Resources */,
 				B69F1E1E2C5BD88A00619B25 /* Assets.xcassets in Resources */,
+				B69F1E452C6BA5B200619B25 /* country_pt.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +179,7 @@
 				B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */,
 				B69F1E3B2C650CD900619B25 /* EntryView.swift in Sources */,
 				B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */,
+				B69F1E472C6CD3F100619B25 /* DataItem.swift in Sources */,
 				B69F1E1A2C5BD88900619B25 /* Find_FlagsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,7 +46,7 @@ struct CountryParser {
 //    }
     
     func loadCountries() -> [Country] {
-            guard let url = Bundle.main.url(forResource: "country", withExtension: "json") else {
+            guard let url = Bundle.main.url(forResource: "country_pt", withExtension: "json") else {
                 print("JSON file not found")
                 return []
             }

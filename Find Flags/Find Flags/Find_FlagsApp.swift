@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Find_FlagsApp: App {
@@ -14,5 +15,6 @@ struct Find_FlagsApp: App {
             //ContentView(classifier: ImageClassifier())
             EntryView()
         }
+        .modelContainer(for: DataItem.self)
     }
 }
