@@ -33,7 +33,7 @@ struct RandomFlagView: View {
                             Text(buttonTitle)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .padding()
-                                .background(Color.blue)
+                                .background(Color.customAccentColor)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                         }
