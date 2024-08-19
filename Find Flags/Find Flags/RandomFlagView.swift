@@ -43,7 +43,7 @@ struct RandomFlagView: View {
                                 //.frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .frame(width: 150, height: 50)
                                 .padding()
-                                .background(selectedWrong.contains(buttonTitle) ? .red : .blue)
+                                .background(selectedWrong.contains(buttonTitle) ? .red : Color.customAccentColor)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                         }

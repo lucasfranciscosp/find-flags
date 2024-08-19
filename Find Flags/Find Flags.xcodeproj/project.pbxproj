@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B69F1E1A2C5BD88900619B25 /* Find_FlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */; };
+		A7CA0DB42C7387130027E2D8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA0DB32C7387130027E2D8 /* OnboardingView.swift */; };
+		A7CA0DB62C7389720027E2D8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA0DB52C7389720027E2D8 /* CreditsView.swift */; };
+		A7CA0DB82C7394060027E2D8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA0DB72C7394060027E2D8 /* Utils.swift */; };
+		B69F1E1A2C5BD88900619B25 /* FindFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */; };
 		B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E1B2C5BD88900619B25 /* ContentView.swift */; };
 		B69F1E1E2C5BD88A00619B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */; };
 		B69F1E212C5BD88A00619B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */; };
@@ -24,8 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7CA0DB32C7387130027E2D8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A7CA0DB52C7389720027E2D8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		A7CA0DB72C7394060027E2D8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B69F1E162C5BD88900619B25 /* Find Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_FlagsApp.swift; sourceTree = "<group>"; };
+		B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFlagsApp.swift; sourceTree = "<group>"; };
 		B69F1E1B2C5BD88900619B25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -75,8 +81,9 @@
 				B69F1E3A2C650CD900619B25 /* EntryView.swift */,
 				B69F1E402C6637DC00619B25 /* RandomFlagView.swift */,
 				B69F1E2D2C5D130F00619B25 /* Find-Flags-Info.plist */,
-				B69F1E192C5BD88900619B25 /* Find_FlagsApp.swift */,
+				B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */,
 				B69F1E1B2C5BD88900619B25 /* ContentView.swift */,
+				A7CA0DB32C7387130027E2D8 /* OnboardingView.swift */,
 				B69F1E322C611EA900619B25 /* ImageClassifier.swift */,
 				B69F1E382C650ACC00619B25 /* MobileNetV2.mlmodel */,
 				B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */,
@@ -87,6 +94,8 @@
 				B69F1E462C6CD3F100619B25 /* DataItem.swift */,
 				B69F1E3C2C6631E200619B25 /* countries.json */,
 				B69F1E3E2C66330D00619B25 /* Get_Json.swift */,
+				A7CA0DB52C7389720027E2D8 /* CreditsView.swift */,
+				A7CA0DB72C7394060027E2D8 /* Utils.swift */,
 			);
 			path = "Find Flags";
 			sourceTree = "<group>";
@@ -175,12 +184,15 @@
 				B69F1E392C650ACC00619B25 /* MobileNetV2.mlmodel in Sources */,
 				B69F1E312C611D2800619B25 /* Classifier.swift in Sources */,
 				B69F1E3F2C66330D00619B25 /* Get_Json.swift in Sources */,
+				A7CA0DB62C7389720027E2D8 /* CreditsView.swift in Sources */,
 				B69F1E332C611EA900619B25 /* ImageClassifier.swift in Sources */,
 				B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */,
 				B69F1E3B2C650CD900619B25 /* EntryView.swift in Sources */,
+				A7CA0DB82C7394060027E2D8 /* Utils.swift in Sources */,
 				B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */,
 				B69F1E472C6CD3F100619B25 /* DataItem.swift in Sources */,
-				B69F1E1A2C5BD88900619B25 /* Find_FlagsApp.swift in Sources */,
+				A7CA0DB42C7387130027E2D8 /* OnboardingView.swift in Sources */,
+				B69F1E1A2C5BD88900619B25 /* FindFlagsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Find Flags/Preview Content\"";
-				DEVELOPMENT_TEAM = Q7Z5S76S2J;
+				DEVELOPMENT_TEAM = Q42NF3HR3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find-Flags-Info.plist";
@@ -345,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Find Flags/Preview Content\"";
-				DEVELOPMENT_TEAM = Q7Z5S76S2J;
+				DEVELOPMENT_TEAM = Q42NF3HR3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find-Flags-Info.plist";
