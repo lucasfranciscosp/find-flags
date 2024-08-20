@@ -30,7 +30,7 @@
 		A7CA0DB32C7387130027E2D8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A7CA0DB52C7389720027E2D8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		A7CA0DB72C7394060027E2D8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		B69F1E162C5BD88900619B25 /* FindFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69F1E162C5BD88900619B25 /* Find Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFlagsApp.swift; sourceTree = "<group>"; };
 		B69F1E1B2C5BD88900619B25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		B69F1E172C5BD88900619B25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B69F1E162C5BD88900619B25 /* FindFlags.app */,
+				B69F1E162C5BD88900619B25 /* Find Flags.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B69F1E152C5BD88900619B25 /* FindFlags */ = {
+		B69F1E152C5BD88900619B25 /* Find Flags */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "FindFlags" */;
+			buildConfigurationList = B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "Find Flags" */;
 			buildPhases = (
 				B69F1E122C5BD88900619B25 /* Sources */,
 				B69F1E132C5BD88900619B25 /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = FindFlags;
+			name = "Find Flags";
 			productName = "Find Flags";
-			productReference = B69F1E162C5BD88900619B25 /* FindFlags.app */;
+			productReference = B69F1E162C5BD88900619B25 /* Find Flags.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "FindFlags" */;
+			buildConfigurationList = B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "Find Flags" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B69F1E152C5BD88900619B25 /* FindFlags */,
+				B69F1E152C5BD88900619B25 /* Find Flags */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "FindFlags" */ = {
+		B69F1E112C5BD88900619B25 /* Build configuration list for PBXProject "Find Flags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B69F1E222C5BD88A00619B25 /* Debug */,
@@ -392,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "FindFlags" */ = {
+		B69F1E242C5BD88A00619B25 /* Build configuration list for PBXNativeTarget "Find Flags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B69F1E252C5BD88A00619B25 /* Debug */,
