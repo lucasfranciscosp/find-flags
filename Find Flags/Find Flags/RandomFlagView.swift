@@ -3,7 +3,6 @@ import SwiftData
 
 struct RandomFlagView: View {
     
-    
     @Environment(\.modelContext) private var context
     @Query private var streak: [DataItem]
     
@@ -18,31 +17,31 @@ struct RandomFlagView: View {
         VStack {
             if currentCountry.code != "unknown" {
                 
-                Text("Your best streak: \(streak.first?.maxStreak ?? 0)")
-                Text("Your current streak: \(currentStreak)")
+                Text("🏆 Melhor streak: \(streak.first?.maxStreak ?? 0)").padding(.bottom)
+                Text("Streak atual: \(currentStreak)")
+                
+                Spacer()
                 
                 Image(currentCountry.code.lowercased())
                     .resizable()
-                    .frame(maxHeight: 300)
-                    .border(Color.black, width: 0.5)
+                    .frame(maxHeight: 240)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
                     .padding()
-                    .scaledToFit()
-                     // Ajuste o tamanho conforme necessário
+                    .shadow(radius: 10)
             
                 let columns: [GridItem] = [
                     GridItem(.flexible()),
                     GridItem(.flexible())
                 ]
-                
-                LazyVGrid(columns: columns, spacing: 20) {
+                Spacer()
+                LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(options, id: \.self) { buttonTitle in
                         Button(action: {
                             handleButtonPress(buttonTitle)
                         }) {
                             Text(buttonTitle)
-                                //.frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .frame(width: 150, height: 50)
-                                .padding()
+                                .padding(10)
                                 .background(selectedWrong.contains(buttonTitle) ? .red : Color.customAccentColor)
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
@@ -79,7 +78,7 @@ struct RandomFlagView: View {
     
     private func handleButtonPress(_ buttonTitle: String) {
         if buttonTitle == countries.first(where: { $0.name == currentCountry.name })?.name {
-            // Acertou
+            
             loadNewCountry()
             selectedWrong = []
             currentStreak += 1
@@ -89,7 +88,6 @@ struct RandomFlagView: View {
                 streak.updateStreak(currentStreak: currentStreak)
             }
         } else {
-            // Errou
             currentStreak = 0
             selectedWrong.append(buttonTitle)
             print("Resposta errada")
@@ -115,13 +113,13 @@ struct RandomFlagView: View {
     }
 }
 
-//struct RandomFlagView_Previews: PreviewProvider {
-//    @State static var sampleCountries: [Country] = [
-//        Country(capital: "Kabul", code: "af", continent: "Asia", flag1x1: "flags/1x1/af.svg", flag4x3: "flags/4x3/af.svg", iso: true, name: "Afghanistan"),
-//        Country(capital: "Mariehamn", code: "ax", continent: "Europe", flag1x1: "flags/1x1/ax.svg", flag4x3: "flags/4x3/ax.svg", iso: true, name: "Aland Islands")
-//    ]
-//    
-//    static var previews: some View {
-//        RandomFlagView(countries: $sampleCountries, currentCountry: <#Country#>)
-//    }
-//}
+struct RandomFlagView_Previews: PreviewProvider {
+    @State static var sampleCountries: [Country] = [
+        Country(capital: "Kabul", code: "af", continent: "Asia", flag1x1: "flags/1x1/af.svg", flag4x3: "flags/4x3/af.svg", iso: true, name: "Afghanistan"),
+        Country(capital: "Mariehamn", code: "ax", continent: "Europe", flag1x1: "flags/1x1/ax.svg", flag4x3: "flags/4x3/ax.svg", iso: true, name: "Aland Islands")
+    ]
+    
+    static var previews: some View {
+        RandomFlagView(countries: $sampleCountries, currentCountry: .init(capital: "Kabul", code: "af", continent: "Asia", flag1x1: "flags/1x1/af.svg", flag4x3: "flags/4x3/af.svg", iso: true, name: "Afghanistan"), selectedWrong: [])
+    }
+}

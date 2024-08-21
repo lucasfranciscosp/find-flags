@@ -34,6 +34,6 @@ struct Find_FlagsApp: App {
                         isPresentingOnboarding = true
                     }.accentColor(.customAccentColor)
             }
-        }
+        }.modelContainer(for: DataItem.self)
     }
 }

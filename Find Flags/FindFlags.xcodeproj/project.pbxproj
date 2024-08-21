@@ -11,7 +11,7 @@
 		A7CA0DB62C7389720027E2D8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA0DB52C7389720027E2D8 /* CreditsView.swift */; };
 		A7CA0DB82C7394060027E2D8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA0DB72C7394060027E2D8 /* Utils.swift */; };
 		B69F1E1A2C5BD88900619B25 /* FindFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */; };
-		B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E1B2C5BD88900619B25 /* ContentView.swift */; };
+		B69F1E1C2C5BD88900619B25 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E1B2C5BD88900619B25 /* CameraView.swift */; };
 		B69F1E1E2C5BD88A00619B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */; };
 		B69F1E212C5BD88A00619B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */; };
 		B69F1E312C611D2800619B25 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F1E302C611D2800619B25 /* Classifier.swift */; };
@@ -32,7 +32,7 @@
 		A7CA0DB72C7394060027E2D8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B69F1E162C5BD88900619B25 /* FindFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFlagsApp.swift; sourceTree = "<group>"; };
-		B69F1E1B2C5BD88900619B25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B69F1E1B2C5BD88900619B25 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B69F1E1D2C5BD88A00619B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69F1E202C5BD88A00619B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B69F1E2D2C5D130F00619B25 /* Find-Flags-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Find-Flags-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -82,7 +82,7 @@
 				B69F1E402C6637DC00619B25 /* RandomFlagView.swift */,
 				B69F1E2D2C5D130F00619B25 /* Find-Flags-Info.plist */,
 				B69F1E192C5BD88900619B25 /* FindFlagsApp.swift */,
-				B69F1E1B2C5BD88900619B25 /* ContentView.swift */,
+				B69F1E1B2C5BD88900619B25 /* CameraView.swift */,
 				A7CA0DB32C7387130027E2D8 /* OnboardingView.swift */,
 				B69F1E322C611EA900619B25 /* ImageClassifier.swift */,
 				B69F1E382C650ACC00619B25 /* MobileNetV2.mlmodel */,
@@ -189,7 +189,7 @@
 				B69F1E412C6637DC00619B25 /* RandomFlagView.swift in Sources */,
 				B69F1E3B2C650CD900619B25 /* EntryView.swift in Sources */,
 				A7CA0DB82C7394060027E2D8 /* Utils.swift in Sources */,
-				B69F1E1C2C5BD88900619B25 /* ContentView.swift in Sources */,
+				B69F1E1C2C5BD88900619B25 /* CameraView.swift in Sources */,
 				B69F1E472C6CD3F100619B25 /* DataItem.swift in Sources */,
 				A7CA0DB42C7387130027E2D8 /* OnboardingView.swift in Sources */,
 				B69F1E1A2C5BD88900619B25 /* FindFlagsApp.swift in Sources */,
@@ -204,6 +204,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -267,6 +268,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -330,6 +332,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find-Flags-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bandeiras: Adivinhe qual é";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To take Pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -361,6 +364,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find-Flags-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bandeiras: Adivinhe qual é";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To take Pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

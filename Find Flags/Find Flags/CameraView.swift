@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CameraView.swift
 //  Find Flags
 //
 //  Created by Lucas Francisco on 01/08/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 import PhotosUI
 
-struct ContentView: View {
+struct CameraView: View {
     
     @State private var image: UIImage?
     @State private var isConfirmationDialogPresented: Bool = false
@@ -85,7 +85,7 @@ struct ContentView: View {
 }
 
 //#Preview {
-//    ContentView()
+//    CameraView()
 //}
 
 struct CircularImageView: View {
